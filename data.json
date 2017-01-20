@@ -1,0 +1,24 @@
+{
+  "team" : [{
+    "name" : "murtaza",
+    "tw" : "https://twitter.com/murtz_abidi",
+    "bio" : "User experience designer and Makers Academy graduate, Arsenal fan",
+    "img" : "murtaza.jpg"
+    },{
+    "name" : "arfah",
+    "tw" : "https://twitter.com/arf_22",
+    "bio" : "StartupKid, Head of Marketing @Makersacademy, trustee at @SparkAndMettle",
+    "img" : "arfah.jpg"
+  }, {
+    "name" : "faheem",
+    "tw" : "https://twitter.com/faheempatel",
+    "bio" : "Freelance product designer a product designer with equal amounts design and code, currently @amaliah_tweets",
+    "img" : "faheem.jpg"
+  }],
+  "events" : [{
+    "title" : "Healtech with Medshr",
+    "date" : "27th January 2017",
+    "start_time" : "6.30pm",
+    "venue" : "Makers Academy, Commercial St, London"
+    }]
+}

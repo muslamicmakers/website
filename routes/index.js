@@ -3,7 +3,12 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Muslamic Makers' });
+  res.render('default', { title: 'Muslamic Makers' });
 });
+
+router.get('/sponsor', function(req, res, next) {
+  res.render('default', { title: 'Sponsor' });
+});
+
 
 module.exports = router;

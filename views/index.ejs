@@ -2,15 +2,11 @@
 <html lang="en">
   <head><% include partials/template/head.ejs %></head>
   <body>
-    <% include partials/template/header.ejs %>
 
     <div class="container">
-      <div class="row">
-        About us
-      </div>
-      <div class="row">
-        Events
-      </div>
+      <% include partials/template/nav.ejs %>
+      <% include partials/template/header.ejs %>
+
       <div class="row team">
         <h3>Team</h3>
         <% team.forEach(function(person){ %>
@@ -26,15 +22,16 @@
       <div class="row">
         Sponsor
       </div>
+
       <div class="row">
         <div class="col-md-6">
           Contact
         </div>
         <div class="col-md-6">
           <% include partials/template/mailchimp.ejs %>
-        </div>
-      </div>
-    </div>
+        </div> <!-- mailchimp -->
+      </div> <!-- Contact -->
+    </div> <!-- container -->
 
     <% include partials/template/footer.ejs %>
     <% include partials/template/jsdefaults.ejs %>

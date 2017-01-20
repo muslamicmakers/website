@@ -1,26 +1,47 @@
-/*body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.header {
+  text-align: center;
+  color: #ffffff;
+  padding-top: 30vh;
 }
 
-a {
-  color: #00B7FF;
+.header h2 {
+  font-size: 4.5em;
 }
 
-.team {
-  background-color: #FAFAFA;
+.hero {
+  width: 100%;
+  max-width: 100%;
+  clear: both;
+  margin: 0 auto;
+  height: 90vh;
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.45)
+  ),
+  /* bottom, image */
+  url(../images/hero.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;*/
 }
 
 .team-box {
+  margin: 0;
   text-align: center;
-
 }
 
 .team-photo {
-  max-width: 200px;
-}*/
+  margin: 0;
+  width: 200px;
+  border-radius: 100px;
+}
 
-
+.sponsor {
+  height: 400px;
+  background-color: red;
+  float: left;
+}
 /* Larger than tablet */
 @media (min-width: 750px) {
   /* Navbar */

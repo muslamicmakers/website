@@ -3,35 +3,47 @@
   <head><% include partials/template/head.ejs %></head>
   <body>
 
+    <div class="hero">
+      <div class="header">
+          <h2>Muslamic Makers</h2>
+          <h4>Diversifying London's silicon roundabout tech meetup scene</h4>
+          <br>
+        <a class="button" href="#">Find out more</a>
+      </div>
+    </div>
+
     <div class="container">
       <% include partials/template/nav.ejs %>
       <% include partials/template/header.ejs %>
-
-      <div class="row team">
-        <h3>Team</h3>
-        <% team.forEach(function(person){ %>
-          <div class="col-md-4 team-box">
-            <a href="<%= person.tw %>" target="_blank">
-              <h3><%= person.name %></h3>
-              <img src="images/team/<%= person.name %>.jpg"  alt="" class="img-circle team-photo">
-              <p><%= person.bio %></p>
-            </a>
-          </div>
-        <% }) %>
-      </div>
-      <div class="row">
-        Sponsor
-      </div>
-
-      <div class="row">
-        <div class="col-md-6">
-          Contact
+        <div class="row">
+          <h3>Who we are</h3>
+          <% team.forEach(function(person){ %>
+            <div class="four columns team-box">
+              <a href="<%= person.tw %>" target="_blank">
+                <img src="images/team/<%= person.name %>.jpg"  alt="" class="img-circle team-photo">
+                <h3><%= person.name %></h3>
+                <p><%= person.bio %></p>
+              </a>
+            </div>
+          <% }) %>
         </div>
-        <div class="col-md-6">
+
+        <div class="row">
+          <h3>Sponsor an event</h3>
+          <div class="six columns">
+            <p>We're looking for innovative companies to sponsor our events, if you want to get your product </p>
+          </div>
+          <div class="six columns">
+            IMG HERE
+          </div>
+        </div>
+
+
+          <h3>Contact</h3>
           <% include partials/template/mailchimp.ejs %>
-        </div> <!-- mailchimp -->
-      </div> <!-- Contact -->
-    </div> <!-- container -->
+        </div>
+
+
 
     <% include partials/template/footer.ejs %>
     <% include partials/template/jsdefaults.ejs %>

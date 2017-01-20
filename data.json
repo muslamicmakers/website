@@ -1,0 +1,21 @@
+{
+  "team" : [{
+    "name" : "Murtaza",
+    "bio" : "enter short bio for murtaza",
+    "img" : "murtaza.jpg"
+    },{
+    "name" : "Arfah",
+    "bio" : "enter bio for arfah here",
+    "img" : "arfah.jpg"
+  }, {
+    "name" : "faheem",
+    "bio" : "enter bio for faheem",
+    "img" : "faheem.jpg"
+  }],
+  "events" : [{
+    "title" : "Healtech with Medshr",
+    "date" : "27th January 2017",
+    "start_time" : "6.30pm",
+    "venue" : "Makers Academy, Commercial St, London"
+    }]
+}

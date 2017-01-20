@@ -4,8 +4,10 @@ var data = require('../data.json');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
+  var team = data.team;
   res.render('index', {
-    title: 'Muslamic Makers'
+    title: 'Muslamic Makers',
+    team: team
   });
 });
 

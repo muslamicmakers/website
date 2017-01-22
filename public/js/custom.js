@@ -1,6 +1,6 @@
 $(function(){
     $(".typed").typed({
-      strings: ["Salams", "Muslamic Makers is diversifying the London tech scene."],
+      strings: ["Salams, we're Muslamic Makers", "We're diversifying the London tech scene."],
       typeSpeed: 20,
       backDelay: 1000,
       showCursor: false

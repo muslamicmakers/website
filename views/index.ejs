@@ -2,17 +2,26 @@
 <html lang="en">
   <head><% include partials/template/head.ejs %></head>
   <body>
-
     <div class="hero">
       <div class="header">
           <h2 class="typed"></h2>
-        <a class="button" href="#">Find out more</a>
       </div>
     </div>
 
     <div class="container">
-      <!-- <% include partials/template/nav.ejs %> -->
-        <section>
+      <% include partials/template/nav.ejs %>
+        <section id="about">
+          <h2>Don't panic... we're Muslim</h3>
+          <div class="row">
+            <div class="twelve columns">
+                <p>Muslamic Makers is a meetup and networking group to get Muslim makers (involved in tech startups, design and development) together to discuss and share their thinking and work.</p>
+                <p>Ultimately our goal is to help grow the Muslim tech startup community, nurturing more confidence and impact in the startup scene. To help diversify the startup world whilst also encouraging more Muslims to work in diverse environments being proud of who they are and respecting other people’s views. Muslamic Makers is not just for Muslims, anyone can come along to any of our events and we encourage it to help build more dialogue and generally develop more awesome things in tech and business.</p>
+            </div>
+
+          </div>
+        </section>
+
+        <section id="who-we-are">
           <h3>Who are we</h3>
           <div class="row team">
             <% team.forEach(function(person){ %>
@@ -26,9 +35,28 @@
               <% }) %>
             </div>
         </section>
+
         <hr>
-        <section>
-          <h3> Past Events</h3>
+
+        <section id="next-event">
+          <h3>Our next event</h3>
+          <h4>Healhtech with Medshr's Dr Asif Qasim (Thurs 26th January 2017) @Makersacademy</h4>
+          <div class="row">
+            <div class="six columns event">
+              <img src="https://cdn.evbuc.com/eventlogos/108716553/d39178fee96f4c37a3bce1b86708bbd9.png" alt="">
+            </div>
+            <div class="six columns">
+              <p>For this years first in conversation event we'll be joined by Dr Asif Qasim the CEO and Founder of Medshr to talk about healthtech and Medshr - the medical network for doctors to share knowledge to save lives!
+                Dr Asif Qasim is a consultant cardiologist and NHS Clinical Director based in London. After successfully launching a case discussion network for cardiologists, he is now leading the MedShr team to build this global, multi-specialty network for doctors.</p>
+              </div>
+          </div>
+          <a class="button button-primary" href="#">Get tickets</a>
+        </section>
+
+        <hr>
+
+        <section id="past-events">
+          <h3>Past Events</h3>
           <div class="row">
               <% past.forEach(function(event){ %>
                 <div class="four columns">
@@ -38,6 +66,18 @@
               <% }) %>
           </div>
         </section>
+
+        <hr>
+
+        <section id="stay-updated">
+          <h3>Stay updated</h3>
+          <div class="row">
+            <div class="twelve columns">
+                <% include partials/template/mailchimp.ejs %>
+            </div>
+          </div>
+        </section>
+
     <% include partials/template/footer.ejs %>
     <% include partials/template/jsdefaults.ejs %>
   </body>

@@ -1,25 +1,63 @@
-/*body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00B7FF;
-}
-
-.team {
-  background-color: #FAFAFA;
-}
-
-.team-box {
+.header {
   text-align: center;
-
+  color: #ffffff;
+  padding-top: 30vh;
 }
 
-.team-photo {
-  max-width: 200px;
+.header h2 {
+  font-size: 4.5em;
+}
+
+section {
+  margin: 20px 0 20px 0;
+  text-align: center;
+}
+/*.team-section {
+  margin: 10px 0 10px 0;
+  text-align: center;
 }*/
 
+
+.team-box {
+
+}
+
+.team-box img {
+  max-width: 200px;
+  border-radius: 100%;
+}
+
+.hero {
+  width: 100%;
+  max-width: 100%;
+  clear: both;
+  margin: 0 auto;
+  height: 90vh;
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.45)
+  ),
+  /* bottom, image */
+  url(../images/hero.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;*/
+}
+
+.sponsor {
+  height: 400px;
+  background-color: red;
+  float: left;
+}
+
+.event img {
+  max-width: 100%;
+}
+
+footer {
+  margin-bottom: 20px;
+}
 
 /* Larger than tablet */
 @media (min-width: 750px) {
@@ -34,7 +72,7 @@ a {
     background: #fff;
     z-index: 99;
     border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee; }
+    border-bottom: 1px solid #eee;}
   .navbar-spacer {
     display: none; }
   .navbar > .container {

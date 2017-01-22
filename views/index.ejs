@@ -6,44 +6,38 @@
     <div class="hero">
       <div class="header">
           <h2 class="typed"></h2>
-          <br>
         <a class="button" href="#">Find out more</a>
       </div>
     </div>
 
     <div class="container">
-      <% include partials/template/nav.ejs %>
-      <% include partials/template/header.ejs %>
-        <div class="row">
-          <h3>Who we are</h3>
-          <% team.forEach(function(person){ %>
-            <div class="four columns team-box">
-              <a href="<%= person.tw %>" target="_blank">
-                <img src="images/team/<%= person.name %>.jpg"  alt="" class="img-circle team-photo">
-                <h3><%= person.name %></h3>
+      <!-- <% include partials/template/nav.ejs %> -->
+        <section>
+          <h3>Who are we</h3>
+          <div class="row team">
+            <% team.forEach(function(person){ %>
+              <div class="four columns team-box">
+                <a href="<%= person.tw %>">
+                  <img src="images/team/<%= person.img %>" alt="">
+                  <h4><%= person.name %></h4>
+                </a>
                 <p><%= person.bio %></p>
-              </a>
+              </div>
+              <% }) %>
             </div>
-          <% }) %>
-        </div>
-
-        <div class="row">
-          <h3>Sponsor an event</h3>
-          <div class="six columns">
-            <p>We're looking for innovative companies to sponsor our events, if you want to get your product </p>
+        </section>
+        <hr>
+        <section>
+          <h3> Past Events</h3>
+          <div class="row">
+              <% past.forEach(function(event){ %>
+                <div class="four columns">
+                  <h6><%= event.title %></h6>
+                  <iframe src="<%= event.youtube_url %>" frameborder="0" allowfullscreen></iframe>
+                </div>
+              <% }) %>
           </div>
-          <div class="six columns">
-            IMG HERE
-          </div>
-        </div>
-
-
-          <h3>Contact</h3>
-          <% include partials/template/mailchimp.ejs %>
-        </div>
-
-
-
+        </section>
     <% include partials/template/footer.ejs %>
     <% include partials/template/jsdefaults.ejs %>
   </body>

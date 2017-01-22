@@ -4,10 +4,12 @@ var data = require('../data.json');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
+  var past = data.past_events;
   var team = data.team;
   res.render('index', {
     title: 'Muslamic Makers',
-    team: team
+    team: team,
+    past: past
   });
 });
 

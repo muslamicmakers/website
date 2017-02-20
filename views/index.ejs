@@ -13,11 +13,10 @@
         <section id="about">
           <h2>Don't panic... we're Muslim</h3>
           <div class="row">
-            <div class="twelve columns">
+            <div class="col-md-12">
                 <p>Muslamic Makers is a meetup and networking group to get Muslim makers (involved in tech startups, design and development) together to discuss and share their thinking and work.</p>
                 <p>Ultimately our goal is to help grow the Muslim tech startup community, nurturing more confidence and impact in the startup scene. To help diversify the startup world whilst also encouraging more Muslims to work in diverse environments being proud of who they are and respecting other people’s views. Muslamic Makers is not just for Muslims, anyone can come along to any of our events and we encourage it to help build more dialogue and generally develop more awesome things in tech and business.</p>
             </div>
-
           </div>
         </section>
 
@@ -25,7 +24,7 @@
           <h3>Who are we</h3>
           <div class="row team">
             <% team.forEach(function(person){ %>
-              <div class="four columns team-box">
+              <div class="col-md-4 team-box">
                 <a href="<%= person.tw %>">
                   <img src="images/team/<%= person.img %>" alt="">
                   <h4><%= person.name %></h4>
@@ -59,7 +58,7 @@
           <h3>Past Events</h3>
           <div class="row">
               <% past.forEach(function(event){ %>
-                <div class="four columns">
+                <div class="col-md-4">
                   <h6><%= event.title %></h6>
                   <iframe src="<%= event.youtube_url %>" frameborder="0" allowfullscreen></iframe>
                 </div>
@@ -70,15 +69,22 @@
         <hr>
 
         <section id="stay-updated">
-          <h3>Stay updated</h3>
           <div class="row">
-            <div class="twelve columns">
-                <% include partials/template/mailchimp.ejs %>
+            <div class="col-md-6">
+              <h3>Stay updated</h3>
+              <% include partials/template/mailchimp.ejs %>
+            </div>
+
+            <div class="col-md-6">
+              <h3>Follow</h3>
             </div>
           </div>
         </section>
 
-    <% include partials/template/footer.ejs %>
+        <hr>
+
+        <% include partials/template/footer.ejs %>
+      </div>
     <% include partials/template/jsdefaults.ejs %>
   </body>
 </html>
